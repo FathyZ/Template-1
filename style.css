@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+*
+{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html
+{
+    scroll-behavior: smooth;
+
+}
+body
+{
+    font-family: 'Lato', sans-serif;
+}
+nav
+{
+    display: flex;
+    position: fixed;
+    right: 0px;
+    left: 0px;
+    z-index: 9999;
+    background-color: aliceblue;
+    box-shadow: 5px 0px 5px grey ;
+}
+ul
+{   font-weight: 500;
+    padding: 10px 30px;
+    width: 30%;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+a
+{
+    text-decoration: none;
+    color: #777;
+}
+a:hover
+{
+    background-color: #777;
+    color: #fff;
+    padding: 10px 10px;
+}
+.home
+{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60vh;
+    background-image:url(imgs/blond-hair-blurred-background-body-casual.jpg);
+    background-position:center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.home-text
+{
+    letter-spacing: 10px;
+    color: #fff;
+    background-color: #000 ;
+    padding: 12px 24px;
+    opacity: 0.8;
+}
+.about
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+.about-intro
+{
+    color: #777;
+    width: 65%;
+    padding: 40px 40px;
+}
+.about-intro h2
+{
+    
+    padding: 30px 0px;
+}
+
+.about-intro p
+{
+    color: #777;
+    line-height: 1.6;
+    text-align: left    ;
+}
+.about-2
+{
+    color: #777;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 30px 20px;
+}
+.about-2-imgwtext
+{
+    width: 30%;
+}
+.about-2-imgwtext img
+{
+    width: 80% ;
+    padding-top: 30px;
+}
+.about-2-parag
+{
+    color: #777;
+    text-align: left;
+    line-height: 1.6;
+    width: 30%;
+}
+.about-2-imgwtext h3
+{
+    color: #777;
+    padding-bottom :10px;
+}
+.about-sliders
+{
+    color:#777 ;
+    padding-top: 20px ;
+    padding-bottom: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about-sliders h2
+{
+    padding-bottom: 20px;
+}
+.title-slider 
+{
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 10px;
+    padding: 20px 0px;
+}
+.photography-slider
+{
+    background-color: rgba(0,0,0,0.1);
+    text-align: center;
+    width: 60%;
+
+}
+.photography-slider .black
+{
+    font-size: 18px;
+    padding: 5px 15px;
+    width: 90%;
+    background-color: #777;
+    color: #fff ;
+}
+.web-slider
+{
+    background-color: rgba(0,0,0,0.1);
+    text-align: center;
+    width: 60%;
+}
+.web-slider .black
+{
+    font-size: 18px;
+    padding: 5px 15px;
+    width: 75%;
+    background-color: #777;
+    color: #fff ;
+}
+.photoshop-slider
+{
+    background-color: rgba(0,0,0,0.1);
+    text-align: center;
+    width: 60%;
+}
+.photoshop-slider .black
+{
+    font-size: 18px;
+    padding: 5px 15px;
+    width: 85%;
+    background-color: #777;
+    color: #fff ;
+}
+.about-stats
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.about-stat
+{
+    padding: 40px 0px;
+    color: #fff;
+    width: 25%;
+    height: 100%;
+    background-color: #777;
+    font-size: 20px;
+    font-weight: 600;
+}
+.portfolio-bg
+{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60vh;
+    background-image:url(imgs/pfcvr3.jpg);
+    background-position:center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.portfolio-bg h1
+{
+    font-weight: 600;
+    letter-spacing: 10px;
+    color: #777;
+}
+.portfolio-content
+{
+    color: #777;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.portfolio-content h1
+{
+    
+    font-weight: 600;
+    padding: 20px;
+}
+.portfolio-content p
+{
+    padding: 20px;
+}
+.portfolio-pics
+{
+    text-align: center;
+    padding: 20px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap:0.5rem;
+    min-height: 30vh;
+    width: 60%;
+}
+.img-pf
+{
+    flex-basis: 23%;
+    /* background: red; */
+}
+.img-pf img
+{
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+}
+.img-pf img:hover
+{
+    opacity: 0.6;
+    cursor: pointer;
+}
+.portfolio-content
+{
+    padding-bottom: 30px;
+    width: 100%;
+}
+.portfolio-content button
+{
+    opacity: 0.7;
+    border: none;
+    padding: 15px 10px;
+    background-color: #777;
+    color: #fff;
+}
+.portfolio-content button:hover
+{
+    opacity: 1;
+    cursor: pointer;
+}
+.contact
+{
+    text-align: center;
+}
+.contact-bg
+{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60vh;
+    background-image:url(imgs/pfcvr2e.jpg);
+    background-position:center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.contact-bg h1
+{
+    font-weight: 600;
+    letter-spacing: 10px;
+    color: #777;
+}
+.contact-content
+{   
+    margin: auto;
+    padding: 10px 10px;
+    display: flex;
+    width: 60%;
+    align-items:center ;
+    justify-content: space-evenly;
+}
+.contact-content img
+{
+    padding: 20px 20px;
+    width: 33%;
+}
+.inputs
+{   
+    padding: 0px 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    width:77%;
+}
+.inputs p 
+{
+    padding: 10px 20px;
+}
+.input-boxes
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100% ;
+}
+.name-input
+{
+    padding: 10px 10px ;
+    width: 25%;
+}
+.email-input
+{
+    padding: 10px 10px ;
+    width: 25%;
+}
+.message-input
+{
+    padding: 10px 10px ;
+    width: 50%;
+}
